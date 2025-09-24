@@ -1,9 +1,22 @@
-<div>
-    <h1 class="text-6xl font-bold">hi</h1>
-    <h1 class="text-6xl font-bold">i'm <span class="text-teal-500">Yuvraj.</span></h1>
+<div class="flex flex-col items-center lg:flex-row gap-4 xl:gap-40 ">
     <div>
-        <button type="button">LinkedIn</button>
-        <button type="button">GitHub</button>
+        <h1 class="text-6xl font-bold">hi</h1>
+        <h1 class="text-6xl font-bold">i'm <span class="text-teal-500">Yuvraj.</span></h1>
+        <div class="flex gap-4 my-4">
+            <a href="https://github.com/yuvrajdev2028">
+            <button type="button" class="w-[40px] h-[40px] rounded-full flex justify-center items-center bg-teal-500 cursor-pointer">
+                <img src="/github-icon.png" alt="Github logo"/>
+            </button>
+            </a>
+            <a href="https://www.linkedin.com/in/yuvrajdev/">
+            <button type="button" class="w-[40px] h-[40px] rounded-full flex justify-center items-center bg-teal-500 cursor-pointer">
+                <img src="/linkedin-icon.png" alt="LinkedIn logo">
+            </button>
+            </a>
+        </div>
+        <a href="#contact"><button class="border-2 border-teal-500 text-teal-500 px-6 py-2 rounded-3xl hover:cursor-pointer hover:border-teal-300 hover:text-teal-300">Get In Touch</button></a>
     </div>
-    <a href="#" routerLink="/contact"><button class="border-2 border-teal-500 text-teal-500 px-6 py-2 rounded-3xl hover:cursor-pointer hover:border-teal-300 hover:text-teal-300">Get In Touch</button></a>
+    <div class="border-b-5 border-b-teal-400 rounded-full w-[300px] h-[300px] flex justify-center items-center">
+        <img class="rounded-full w-[300px] h-[300px]" src="/photo.jpg" alt="my photo">
+    </div>
 </div>

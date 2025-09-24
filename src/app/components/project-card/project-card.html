@@ -1,0 +1,17 @@
+<div class="project-card bg-slate-700 border-0 hover:border-2 transition-all duration-300 hover:border-teal-300 max-w-fit p-4 rounded-md">
+    <h3 class="font-semibold text-xl mb-4 text-teal-300">{{projectTitle}}</h3>
+    <div class="bg-slate-900 rounded-md py-2 flex justify-center items-center">
+        <img class="rounded-md h-[300px]" [src]="projectImg"/>
+    </div>
+    <div class="flex gap-2 my-6 flex-wrap ">
+        @for(skill of projectSkills; track $index){
+        <app-skills-tag [skill]="skill"></app-skills-tag>
+        }
+    </div>
+    <p>{{projectDesc}}</p>
+    <a [href]="projectRepoLink">
+        <button type="button" class="w-[40px] h-[40px] rounded-full flex justify-center items-center bg-teal-500 cursor-pointer my-2">
+            <img src="/github-icon.png" alt="Github logo"/>
+        </button>
+    </a>
+</div>

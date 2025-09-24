@@ -1,1 +1,15 @@
-<p>projects works!</p>
+<div class="my-8" id="projects">
+    <h2 class="text-3xl font-bold"><span class="hover:text-teal-300 cursor-default">Projects</span></h2>
+    <div class="flex flex-col lg:flex-row gap-4 mt-2">
+        @for(project of projectData;track $index){
+            <app-project-card
+             [projectTitle]="project.title" 
+             [projectDesc]="project.desc"
+             [projectImg]="project.imgSrc"
+             [projectSkills]="project.skills"
+             [projectLiveLink]="project.liveLink"
+             [projectRepoLink]="project.repoLink"
+             ></app-project-card>
+        }
+    </div>
+</div>
