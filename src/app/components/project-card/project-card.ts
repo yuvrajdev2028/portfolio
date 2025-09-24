@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { SkillsTag } from '../skills-tag/skills-tag';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-project-card',
-  imports: [SkillsTag],
+  imports: [SkillsTag, NgIf],
   templateUrl: './project-card.html',
   styleUrl: './project-card.css'
 })

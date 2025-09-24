@@ -9,9 +9,16 @@
         }
     </div>
     <p>{{projectDesc}}</p>
-    <a [href]="projectRepoLink">
-        <button type="button" class="w-[40px] h-[40px] rounded-full flex justify-center items-center bg-teal-500 cursor-pointer my-2">
-            <img src="/github-icon.png" alt="Github logo"/>
-        </button>
-    </a>
+    <div class="flex gap-2">
+        <a [href]="projectRepoLink">
+            <button type="button" class="w-[40px] h-[40px] rounded-full flex justify-center items-center bg-teal-500 cursor-pointer my-2">
+                <img src="/github-icon.png" alt="Github logo"/>
+            </button>
+        </a>
+        <a [href]="projectLiveLink" *ngIf="projectLiveLink!=''">
+            <button type="button" class="w-[40px] h-[40px] rounded-full flex justify-center items-center bg-teal-500 cursor-pointer my-2">
+                <img src="/earth.png" alt="Earth logo for live link" width="30" height="30"/>
+            </button>
+        </a>
+    </div>
 </div>
